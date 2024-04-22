@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Carlito';
+    background-color: rgb(199, 184, 184);
+}
+
+.hero-container{
+    background-image: url(./assets/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-wrapper{
+    margin-bottom: 15rem;
+}
+
+.hero-container h1{
+    font-size: clamp(2rem, 6vw, 6vw);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero-container p{
+    display: flex;
+    flex-direction: column;
+    color: rgb(163, 0, 0);   
+    font-size: clamp(1rem, 2vw, 2vw);
+    text-align: center;
+}
+
+.content-container{
+    height: 100vh;
+}
+
+.content-container ul{
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.content-container li{
+    list-style: none;
+}
+
+h2{
+    font-size: clamp(0.5rem, 2vw, 2vw);
+    text-align: center;
+}
+
+.content-container p{
+    margin-top: 2rem;
+}
+
+.content-container img{
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    box-shadow: 0 0 20px 0 black;
+}
+
+@media screen and (min-width: 1200px) {
+    .content-container ul{
+        flex-direction: row;
+        margin: 5rem;
+    }
+
+    .content-container p{
+        margin-left: 5rem;
+        margin-top: 0;
+    }
+}
+
+.cards-container{
+    min-height: 50vh;
+    margin-inline: 2rem;
+}
+
+.cards-container h1{
+    font-size: clamp(2rem, 5vw, 5vw);
+    text-align: center;
+}
+
+.card-container li{
+    list-style: none;
+}
+
+.cards-container img{
+    border-bottom: 0.25rem solid rgb(255, 0, 0);
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: auto;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0, 0, 0 / 12%);
+    background-color: white;
+    border-radius: 0.25rem;
+    flex: 1;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px 0 black;
+  }
+
+.card-content{
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        flex-basis: calc(50% - 1rem);
+        margin: 0.5rem;
+    }
+    
+    img {
+        min-height: 15.5rem;
+    }
+    }
+    
+    
+    
+@media screen and (min-width: 1200px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+    
+        .card {
+            flex-basis: calc(33.333% - 20px);
+            margin: 0.5rem;
+        }
+    
+    
+    img {
+        min-height: 16.375rem;
+    }
+}
+
+.video-container{
+   min-height: 60vh;
+   margin-top: 5rem;
+}
+
+.video-container h1{
+    font-size: clamp(2rem, 5vw, 5vw);
+    text-align: center;
+}
+
+.video-yt{
+    width: 20rem;
+    height: auto;
+    box-shadow: 0 0 20px 0 black;
+}
+
+@media screen and (min-width: 1200px) {
+    .video-yt{
+        width: 80rem;
+        max-width: 100rem;
+        height: 40rem;
+    }
+}
+
+.accordion-container{
+    min-height: 50vh;
+}
+
+.accordion-wrapper{
+    margin: 0;
+}
+
+.accordion-container li{
+    list-style: none;
+}
+
+.accordion-container button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-container .accordion .symbol::before{
+    content: "+";
+}
+
+.accordion-container .accordion.active .symbol::before{
+    content: "-";
+}
+
+.accordion-container p{
+    font-size: 20px;
+}
+
+.accordion-container .accordion .panel{
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    transition: all 0.4s;
+    border: 1px black solid;
+}
+
+.accordion-container .accordion.active .panel{
+    min-height: 115px;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .accordion-wrapper{
+        margin: 5rem;
+    }
+}
+
+.footer-container{
+    min-height: 50vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container ul{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.footer-container h2{
+    color: white;
+    font-size: 3rem;
+}
+
+.footer-container p{
+    color: white;
+    margin: 1rem 1rem 2rem 0;
+}
+
+.footer-map{
+    width: 100%;
+    height: auto;
+    margin: 5rem;
+}
+
+@media screen and (min-width: 1200px){
+
+    .footer-container{
+        flex-direction: row;
+    }
+
+    .footer-map{    
+        max-width: 40rem;
+        height: 20rem;
+        margin-inline: 5rem;
+    }
+}
