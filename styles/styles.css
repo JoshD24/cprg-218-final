@@ -150,6 +150,7 @@ h2{
 .cards-container{
     min-height: 50vh;
     margin-inline: 2rem;
+    margin-bottom: 20rem;
 }
 
 .cards-container h1{
