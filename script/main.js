@@ -1,11 +1,3 @@
-// const accordion = document.getElementsByClassName("accordion");
-// let i;
-
-// for(i = 0; i < accordion.length; i++){
-//     accordion[i].addEventListener("click", function(){
-//         this.classList.toggle("active");
-//     });
-// }
 // Accordion
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
@@ -28,10 +20,3 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         }
     });
 });
-
-// Dynamic Date
-const year = new Date(). getFullYear();
-const brand = "ReVibe"
-const result = `${year} ${brand}`
-
-document.getElementById("copyright").outerHTML = result
